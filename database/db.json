@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "name": "Dedos",
+      "price": "39.99",
+      "image": "imagenes/dedos.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Nave StarWars",
+      "price": "59.99",
+      "image": "imagenes/naveStarwars.jpg"
+    },
+    {
+      "id": "9dc2",
+      "name": "Darth vader",
+      "price": "50.99",
+      "image": "imagenes/darthvader.jpg"
+    },
+    {
+      "id": "333e",
+      "name": "Rick",
+      "price": "120.99",
+      "image": "https://dl.myminifactory.com/object-assets/5b2a2b5723efc/images/720X720-img-2063.jpg"
+    },
+    {
+      "id": "0b88",
+      "name": "Onix",
+      "price": "20.99",
+      "image": "imagenes\\onixPokemon.jpg"
+    },
+    {
+      "id": "d88d",
+      "name": "Morty",
+      "price": "120.99",
+      "image": "https://fbi.cults3d.com/uploaders/13211436/illustration-file/87f488d7-f3d3-42a7-8ce1-38dc44f93bb4/MortyFigurine.jpg"
+    }
+  ]
+}

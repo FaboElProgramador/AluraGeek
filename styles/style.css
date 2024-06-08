@@ -1,0 +1,382 @@
+@import url("reset\ .css");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+.gradient {
+	width: 100vw;
+	height: auto;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 200% 200%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #5300C8;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.menu-icono {
+    width: 50px;
+    height: auto;
+    margin-right: 8px;
+    filter: drop-shadow(4px 6px 3px rgb(0 0 0 / 0.7));
+    transition: transform 0.5s;
+}
+
+.menu-icono:hover {
+    transform: rotateY(360deg);
+}
+
+.menu-titulo {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+.misProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.subtitulo {
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    color: #282727;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 80vh;
+    width: 100%;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(66, 61, 61, 0.25),
+    0 6px 20px rgba(66, 61, 61, 0.25);
+    overflow: auto;
+    margin: 5px
+}
+
+.listado-produc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.lista-card {
+    width: 480px;
+    margin-left: 35px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #5300C8;
+    border-radius: 8px;
+    border: 3px solid black;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.img-container {
+    display: flex;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+}
+
+
+.card-container--info {
+    overflow-wrap: break-word;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-titulo {
+    overflow-wrap: break-word;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-container--value {
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.card-container--value p {
+    overflow-wrap: break-word;
+    font-size: 19px;
+    font-weight: bold;
+    color: black
+}
+
+.delete-button {
+    background: #5300C8;
+    border: none;
+}
+
+.borrar {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 470px;
+    height: 450px;
+}
+
+.registroProductos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.registrar {
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: bold;
+    color: #282727;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.dato {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #5300C8;
+    gap: 0px;
+    outline: none;
+    width: 90%;
+    height: 30px;
+    margin: auto;
+}
+
+::placeholder {
+    color: #5300C8;
+    opacity: 1;
+    font-size: 16px;
+}
+
+.button-submit {
+    color: #f8f8f8;
+    background: #9747FF;
+}
+
+.button-submit,
+.button-clear {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 15px;
+    width: 120px;
+    margin-left: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-clear {
+    color: #5300C8;
+}
+
+footer {
+    width: 100%;
+    background: #5300C8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-and-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.menu-titulo-footer {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+.datos {
+    font-size: 15px;
+    margin: auto;
+    padding: auto;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.datos p {
+    margin-bottom: 10px;
+}
+
+/* Estilo pantallas pequeñas */
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .menu-header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu-titulo {
+        font-size: 30px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-card {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .button-submit,
+    .button-clear {
+        width: 45%;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .menu-footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-titulo-footer {
+        font-size: 30px;
+    }
+
+    .datos {
+        font-size: 13px;
+    }
+}
